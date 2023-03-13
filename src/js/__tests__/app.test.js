@@ -26,6 +26,20 @@ test('app test', () => {
       },
     ],
   };
+  const result2 = [
+    {
+      id: 8,
+      name: 'Двойной выстрел',
+      icon: 'http://...',
+      description: 'Двойной выстрел наносит двойной урон',
+    },
+    {
+      id: 9,
+      name: 'Нокаутирующий удар',
+      icon: 'http://...',
+      description: 'Описание недоступно',
+    },
+  ];
   const result = specialAttacks(character);
-  expect(result).toEqual(result);
+  expect(result).toEqual(result2);
 });
